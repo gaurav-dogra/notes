@@ -1,6 +1,0 @@
-﻿Shortcuts Visual Studio
-Remove Unsued Usings
-	- Ctrl + R + G
-Run the Program
-	- Ctrl + F5
-
