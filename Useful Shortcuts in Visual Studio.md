@@ -8,3 +8,6 @@
 
 - Ctrl + R, T
 
+## Auto arrange code in the document
+
+- Ctrl + K, Ctrl + D
