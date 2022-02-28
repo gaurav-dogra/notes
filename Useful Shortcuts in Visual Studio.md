@@ -11,3 +11,14 @@
 ## Auto arrange code in the document
 
 - Ctrl + K, Ctrl + D
+
+## Show Solution explorer
+
+Ctrl + Alt + L
+
+## How to rename a variable 
+
+Ctrl + R + Ctrl + R
+
+
+
