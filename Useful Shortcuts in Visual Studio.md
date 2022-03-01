@@ -20,5 +20,10 @@ Ctrl + Alt + L
 
 Ctrl + R + Ctrl + R
 
+## How to Comment a block in VS
 
+Ctrl + K + C
 
+## How to Un-Comment a block in VS
+
+Ctrl + K + U
