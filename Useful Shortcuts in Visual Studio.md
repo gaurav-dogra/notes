@@ -27,3 +27,11 @@ Ctrl + K + C
 ## How to Un-Comment a block in VS
 
 Ctrl + K + U
+
+## How to remove Unwanted using statements
+
+Ctrl + R, Ctrl + G
+
+## How to create Constructor
+
+ctor TAB TAB
