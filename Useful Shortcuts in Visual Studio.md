@@ -35,3 +35,20 @@ Ctrl + R, Ctrl + G
 ## How to create Constructor
 
 ctor TAB TAB
+
+## How to Build and Run the project 
+
+Ctrl + F5
+
+## Go to Definition
+
+F12
+
+## How to insert a new line when cursor is between current line
+
+Ctrl + Shift + Enter
+
+
+
+
+
