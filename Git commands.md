@@ -10,5 +10,7 @@ git add -u
 
 git remote -v
 
+## How to add new changes to previous commit
 
-
+1. git add <files>
+2. git commit --amend --no-edit

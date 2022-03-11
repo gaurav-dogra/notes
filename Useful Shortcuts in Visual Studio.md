@@ -1,5 +1,9 @@
 # Useful Shortcuts in Visual Studio
 
+## how to create your own shortcut in Visual Studio
+
+Menu bar -> Toots -> Options -> Environment -> Keyboard -> select a command -> Choose a shortcut -> Assign
+
 ## Collapse a code block
 
 - Ctrl + M + M to collapse and expand
@@ -47,8 +51,3 @@ F12
 ## How to insert a new line when cursor is between current line
 
 Ctrl + Shift + Enter
-
-
-
-
-
