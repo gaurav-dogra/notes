@@ -48,6 +48,11 @@ Ctrl + F5
 
 F12
 
-## How to insert a new line when cursor is between current line
+## How to insert a new line below the current line
 
 Ctrl + Shift + Enter
+
+## How to insert a new line above the current line
+
+Ctrl + Enter
+
