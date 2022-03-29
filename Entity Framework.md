@@ -1,0 +1,3 @@
+## 1. Database first approach: scaffold DBContext from database, selecting the tables to scaffold
+
+Scaffold-DbContext 'Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False' Microsoft.EntityFrameworkCore.SqlServer -Tables Suppliers, Products, Categories
