@@ -7,8 +7,9 @@
 
 ## 2. Code First Approach: Migration of Model from DBContext to Database
 
-- `dotnet ef migrations add InitialCreate`
-- `dotnet ef database update`
+- After inheriting DbContext
+- `Add-Migration InitialCreate`
+- `update-database`
 
 ## 3. Code First Approach: Alter a table
 
