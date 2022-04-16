@@ -18,3 +18,6 @@
 - a migration file with `up` and `down` is created. `up` is run when you apply the migration. `down` is run if you ever decide to revert it
 - `dotnet ef database update`
 
+## 4. Drop Database
+
+`drop-database`

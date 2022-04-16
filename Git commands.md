@@ -9,9 +9,13 @@
 5. `git remote add origin https://github.com/gaurav-dogra/InspectionAPI.git`
 6.  git push origin main
 
-## Adding only tracked files to index with and ignoring untracked files for next commit
+## Adding only tracked files for next commit
 
 `git add -u`
+
+## Adding only untracked files for next commit
+
+`git add -i (4) (*) (q)`
 
 ## How to check the alias / address of Git Remote
 
