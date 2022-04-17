@@ -30,6 +30,12 @@
 
 `git checkout -b <newBranchName>`
 
+## How to rename a branch
+
+`git checkout oldBranchName`
+
+`git branch -m newBranchName`
+
 ## How to switch branch
 
 `git checkout <branchName>`
@@ -45,6 +51,12 @@
 `git add firstFile.txt \`
 
 `secondfile.txt`
+
+## How to know your git version
+
+`git --version`
+
+
 
 
 
