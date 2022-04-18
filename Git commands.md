@@ -1,6 +1,6 @@
 # Git commands
 
-## How to push your current Project to Github
+## Push your current Project to Github
 
 1. `Git init`
 2. Add .gitignore
@@ -17,42 +17,50 @@
 
 `git add -i (4) (*) (q)`
 
-## How to check the alias / address of Git Remote
+## Revert a file to previous commit
+
+`git checkout <filename>`
+
+## Revert all local uncommitted changes
+
+`git checkout .`
+
+## Check the alias / address of Git Remote
 
 `git remote -v`
 
-## How to add new changes to previous commit
+## Add new changes to previous commit
 
 1. `git add <files>`
 2. `git commit --amend --no-edit`
 
-## How to create a new branch
+## Create a new branch
 
 `git checkout -b <newBranchName>`
 
-## How to rename a branch
+## Rename a branch
 
 `git checkout oldBranchName`
 
 `git branch -m newBranchName`
 
-## How to switch branch
+## Switch to another branch
 
 `git checkout <branchName>`
 
-## How to track your remote branches explicitly 
+## Track your remote branches explicitly 
 
 `git branch -f <remote_branch_name> origin/remote_branch_name`
 
 `git checkout remote_branch_name(this is local operation)`
 
-## How to write a Git command on multiple lines
+## Write a Git command on multiple lines
 
 `git add firstFile.txt \`
 
 `secondfile.txt`
 
-## How to know your git version
+## Know your git version
 
 `git --version`
 
