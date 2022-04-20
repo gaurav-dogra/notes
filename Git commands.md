@@ -34,6 +34,10 @@
 1. `git add <files>`
 2. `git commit --amend --no-edit`
 
+## Amend the commit message of previous commit
+
+`git commit --amend`
+
 ## Create a new branch
 
 `git checkout -b <newBranchName>`
