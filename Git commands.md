@@ -25,6 +25,14 @@
 
 `git checkout .`
 
+## Revert a folder to a previous commit
+
+`git rm -r /path/to/dir`
+
+`git checkout <rev> /path/to/dir`
+
+`git commit -m "reverting directory"`
+
 ## Check the alias / address of Git Remote
 
 `git remote -v`
