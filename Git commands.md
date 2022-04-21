@@ -60,6 +60,14 @@
 
 `git checkout <branchName>`
 
+## Delete a branch at local
+
+`git branch -d <branchName>`
+
+## Delete remote branch
+
+`git push origin --delete <branchName>`
+
 ## Track your remote branches explicitly 
 
 `git branch -f <remote_branch_name> origin/remote_branch_name`
