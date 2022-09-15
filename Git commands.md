@@ -37,6 +37,10 @@
 
 `git remote -v`
 
+## view last commit details
+
+`git log -1`
+
 ## Add new changes to previous commit
 
 1. `git add <files>`
@@ -60,6 +64,10 @@
 
 `git checkout <branchName>`
 
+## Move to previous branch
+
+`git checkout -`
+
 ## Delete a branch at local
 
 `git branch -d <branchName>`
@@ -68,11 +76,11 @@
 
 `git push origin --delete <branchName>`
 
-## Track your remote branches explicitly 
+## How to bring a remote branch to local 
 
-`git branch -f <remote_branch_name> origin/remote_branch_name`
+`git checkout <feature/CPDT-18416>`
 
-`git checkout remote_branch_name(this is local operation)`
+`git pull
 
 ## Write a Git command on multiple lines
 
@@ -84,7 +92,100 @@
 
 `git --version`
 
+## Merge Master branch to your branch
+
+`git checkout <featurebranch>` go to your feature branch
+
+commit if any changes are there
+
+`git rebase <master>`
+
+## Get out of 'detached head state'
+
+`git checkout -`
+
+Note: you lose all the commits made in detached head state
+
+## Diff when you have not 'git add' any files yet
+
+`git diff`
+
+## Diff with last commit
+
+`git diff --cached`
+
+## Combine of `git diff` and `git diff --cached`
+
+`git diff HEAD`
+
+## Diff between current state and a certain commit
+
+`git diff <commit hash>`
+
+## Stash the changes
+
+`git stash`
+
+## Restore the Stash
+
+`git stash apply`
+
+## Undo the last commit, while leaving your working tree untouched
+
+`git reset HEAD~`
+
+## Configure the default diff tool
+
+`git config --global diff.tool kdiff3`
+
+## View the files between two commits in the default difftool
+
+`git difftool Head~33..Head`
+
+## Squash the commits
+
+1. git checkout master
+2. git pull
+3. git checkout -b <new branch>(new branch with one commit for all the commits)
+4. git checkout <your branch>(the branch to squash)
+5. git push(create backup)
+6. git checkout <new branch>
+7. git merge --squash <your branch>
+8. git commit -m "message for the single squashed commit"
+9. git log --oneline --graph
+
+## Difference between local branch and origin
+
+`git difftool origin/branchname`
+
+
+
+## Check the url of remote
+
+`git remote show origin`
+
+
+
+### Remove untracked files
+
+`git clean -n` (dry run)
+
+`git clan -f`(actual command)
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+git 
