@@ -7,25 +7,53 @@
 3. Commit the code
 4. Create a repository on Github
 5. `git remote add origin https://github.com/gaurav-dogra/InspectionAPI.git`
-6.  git push origin main
+6. git push origin main
 
-## Adding only tracked files for next commit
+# Commit
+
+### Picking parts from a single file to add to a commit
+
+ `git add -p <fileName>`
+
+### Writing a commit message with a body
+
+`git add <file/s>` 
+
+`git commit (opens editor window)`
+
+`<first line is subject>`
+
+`<empty line>`
+
+`<commit body>`
+
+### Adding only tracked files for next commit
 
 `git add -u`
 
-## Adding only untracked files for next commit
+### Adding only untracked files for next commit
 
 `git add -i (4) (*) (q)`
 
-## Revert a file to previous commit
+### Revert a file to previous commit
 
 `git checkout <filename>`
 
-## Revert all local uncommitted changes
+### Revert/reset a file to another branch
+
+`git checkout <branchname of desired file> -- <file path>`
+
+### Revert all local un-staged changes
 
 `git checkout .`
 
-## Revert a folder to a previous commit
+### Revert all staged and un-staged changes
+
+`git reset HEAD`
+
+`git checkout .`
+
+### Revert a folder to a previous commit
 
 `git rm -r /path/to/dir`
 
@@ -33,22 +61,39 @@
 
 `git commit -m "reverting directory"`
 
-## Check the alias / address of Git Remote
-
-`git remote -v`
-
-## view last commit details
+### view last commit details
 
 `git log -1`
 
-## Add new changes to previous commit
+### Add new changes to previous commit
 
 1. `git add <files>`
 2. `git commit --amend --no-edit`
 
-## Amend the commit message of previous commit
+### Amend the commit message of previous commit
 
-`git commit --amend`
+`git commit --amend` and press enter
+
+### How to reset last commit on local
+
+git reset --soft HEAD~1
+
+===================================================================================================
+
+
+
+## List all the files that are being tracked
+
+git ls-tree -r master --name-only
+
+## Remove a folder from git tracking
+
+- Add <folderpath> to gitignore 
+- `git rm -r --cached <folderpath>`
+
+## Check the alias / address of Git Remote
+
+`git remote -v`
 
 ## Create a new branch
 
@@ -80,7 +125,7 @@
 
 `git checkout <feature/CPDT-18416>`
 
-`git pull
+`git pull`
 
 ## Write a Git command on multiple lines
 
@@ -100,6 +145,22 @@ commit if any changes are there
 
 `git rebase <master>`
 
+
+
+### Abort/Cancel Merging
+
+`git merge --abort`
+
+## How to overwrite local branch from remote
+
+`git fetch --all`
+
+`git reset --hard origin/branchName`
+
+## How to overwrite local branch with local master
+
+git reset --hard master
+
 ## Get out of 'detached head state'
 
 `git checkout -`
@@ -118,7 +179,7 @@ Note: you lose all the commits made in detached head state
 
 `git diff HEAD`
 
-## Diff between current state and a certain commit
+## compare current state and a certain commit
 
 `git diff <commit hash>`
 
@@ -138,9 +199,17 @@ Note: you lose all the commits made in detached head state
 
 `git config --global diff.tool kdiff3`
 
-## View the files between two commits in the default difftool
+## View the files between two commits in the difftool
 
-`git difftool Head~33..Head`
+`git difftool commit~..commit`
+
+## View the changes brought in by a commit
+
+`git diff commit~ commit`
+
+## View the changed files since last commit
+
+`git diff --name-only HEAD HEAD~1`
 
 ## Squash the commits
 
@@ -154,38 +223,33 @@ Note: you lose all the commits made in detached head state
 8. git commit -m "message for the single squashed commit"
 9. git log --oneline --graph
 
-## Difference between local branch and origin
+## Compare two branches
 
-`git difftool origin/branchname`
+`git [difftool | diff] origin/branchname`
 
+`git [diff | difftool] master...`
 
+## Compare Two commits GUI
+
+`gitk firstCommit..secondCommit`
+
+## Find what file changed in a commit 
+
+`git log --raw`
 
 ## Check the url of remote
 
 `git remote show origin`
 
-
-
-### Remove untracked files
+### Delete/Remove untracked files
 
 `git clean -n` (dry run)
 
-`git clan -f`(actual command)
+`git clean -f`(actual command)
 
+`git clean -f -d` (clean directories)
 
+## Preview git pull
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-git 
+1. `git fetch`
+2. `git log HEAD..origin/master`

@@ -56,3 +56,13 @@ Ctrl + Shift + Enter
 
 Ctrl + Enter
 
+## Bookmarks
+
+#### How to add/remove a bookmark
+
+Ctrl + K, Ctrl + K
+
+#### How to see all the bookmarks
+
+Ctrl + K, Ctrl + W
+
